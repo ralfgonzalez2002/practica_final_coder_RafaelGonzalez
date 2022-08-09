@@ -1,0 +1,26 @@
+header {
+  @include flex(row, space-between, center);
+  grid-area: miHeader;
+  background-color: rgb(218, 236, 239);
+
+  a img {
+    width: 50px;
+    margin-left: 50px;
+  }
+  nav {
+    margin-right: 100px;
+    ul li {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0 15px;
+      a:link,
+      a:visited {
+        @include btn(white, #007bff, 16px);
+        font-size: 22px;
+        border-bottom: solid 2px;
+        text-decoration: none;
+        padding: 3px 6px;
+      }
+    }
+  }
+}

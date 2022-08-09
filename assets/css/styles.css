@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Nunito", sans-serif;
+}
+
+body,
+html {
+  background-color: #ededed;
+}
+
+article#logos {
+  grid-area: logos;
+  background-image: url("https://securecdn.pymnts.com/wp-content/uploads/2022/03/Crypto-Exchanges-Russia.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article#logos img {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.bg-rafa-color {
+  background-color: #ededed;
+}
+
+.border {
+  border: 1px solid #f00 !important;
+}
+
+.boton {
+  color: white;
+  background-color: #007bff;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 16px;
+  font-size: 15px;
+  margin-left: 65px;
+  margin-bottom: 20px;
+}
+
+.botones {
+  padding: 40px 0 0 0;
+}
+
+#container-login {
+  display: grid;
+  grid-template-areas:
+    "miHeader miHeader"
+    "imagen formulario"
+    "footer footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px auto 60px;
+  grid-row-gap: 10px;
+  grid-column-gap: 15px;
+  width: auto;
+  height: 100vh;
+}
+
+#container-registro {
+  display: grid;
+  grid-template-areas:
+    "miHeader miHeader miHeader"
+    "imagen1 formulario imagen2"
+    "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px auto 60px;
+  grid-row-gap: 10px;
+  grid-column-gap: 15px;
+  width: 100%;
+  height: 100vh;
+}
+
+#container-homepage {
+  display: grid;
+  grid-template-areas:
+    "miHeader miHeader"
+    "menu saldo"
+    "tabla tabla"
+    "footer footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 60px;
+  grid-row-gap: 10px;
+  grid-column-gap: 15px;
+  width: 100%;
+  height: 100vh;
+}
+#container-transacciones {
+  display: grid;
+  grid-template-areas:
+    "miHeader miHeader"
+    "saldo saldo"
+    "compra venta"
+    "footer footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 60px;
+  grid-row-gap: 10px;
+  grid-column-gap: 15px;
+  width: 100%;
+  height: 100vh;
+}
+
+.controls {
+  width: 93%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1ps solid;
+  font-size: 18px;
+}
+
+.color-fondo {
+  background: linear-gradient(#007bff, #f8f9fa);
+}
+
+#formulario {
+  margin: 50px auto;
+  width: 400px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+#formulario .elemento label {
+  color: white;
+}
+
+.form-register {
+  padding: 30px;
+  margin: auto;
+  box-shadow: 7px 13px 37px black;
+}
+
+.form-register h1 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.form-register p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.form-register p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #007bff;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  border-radius: 16px;
+}
+
+#formulario .elemento input {
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+#formulario h1 {
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.footer-login {
+  grid-area: footer;
+  color: black;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  grid-area: miHeader;
+  background-color: rgb(218, 236, 239);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a img {
+  width: 50px;
+  margin-left: 50px;
+}
+
+header nav {
+  margin-right: 100px;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 15px;
+}
+
+header nav ul li a:link,
+a:visited {
+  font-size: 22px;
+  color: white;
+  background-color: #278dfba9;
+  border-bottom: solid 2px;
+  text-decoration: none;
+  padding: 3px 6px;
+  border-radius: 16px;
+}
+
+.xlarge-height {
+  height: 80vh;
+}
+
+.height-max {
+  height: 40vh;
+}
+
+.height-medium {
+  height: 10vh;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+#img-criptos {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#imagen {
+  background-image: url("https://invertiplus.com.ar/assets/2021/ilus-login.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen1-registro {
+  background-image: url("https://previews.123rf.com/images/bonumopus/bonumopus1710/bonumopus171000038/87676360-blockchain-cripto-moneda-bitcoin-internet-global-en-todo-el-mundo-fondo-abstracto-de-la-matriz-c%C3%B3dig.jpg?fj=1");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 16px 16px 0;
+}
+
+.imagen2-registro {
+  background-image: url("https://blog.orionx.com/content/images/size/w1200/2022/03/que-es-arbitraje-criptomonedas-chile.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px 0 0 16px;
+}
+
+#index-h1 {
+  font-size: 80px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.margin-saldo {
+  margin-left: 10rem;
+}
+
+.logo-header {
+  width: 70px;
+}
+
+section#mensaje {
+  grid-area: mensaje;
+}
+
+section#mensaje h1 {
+  font-size: 80px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-areas:
+    "miHeader miHeader"
+    "mensaje logos"
+    "footer footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px auto 60px;
+  grid-row-gap: 10px;
+  grid-column-gap: 15px;
+  width: 100%;
+  height: 100vh;
+}
+
+.redes {
+  width: 50px;
+}
+
+.saldo {
+  grid-area: saldo;
+}
+
+.size-saldo {
+  font-size: 2em;
+}
+
+.style-list {
+  list-style-type: none;
+}
+
+.compra {
+  grid-area: compra;
+}
+
+.venta {
+  grid-area: venta;
+}
